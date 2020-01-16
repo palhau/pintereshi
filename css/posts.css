@@ -1,0 +1,51 @@
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.posts {
+    width: 960px;
+    margin: 0 auto;
+    column-count: 4;
+}
+
+@media (max-width: 400px){
+    .posts {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 1280px) {
+    .posts {
+        width: 1080px;
+        margin: 0 auto;
+        column-count: 5;
+    }
+}
+@media (min-width:1800px){
+    .posts {
+        width: 2500px;
+        margin: 0 auto;
+        column-count: 7;
+    }
+}
+.posts img {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.posts--img {
+    break-inside: avoid-column;
+}
+
+.posts--img img {
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+
+.posts--img span {
+    font-family: 'IBM Plex Mono' Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 80px;
+    margin-bottom: 0 auto;
+}
