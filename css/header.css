@@ -1,51 +1,70 @@
 .header {
     max-width: 100%;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 5px 0;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
     border-bottom: solid 1px rgb(209, 207, 207);
+    box-sizing: border-box;
+    height: 60px;
   }
 
+  .header input {
+    flex: 1 1 auto;
+    display: inline-block;
+    margin: 0px 16px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    border: none; 
+    font-size: 12px;
+  }
+
+  .header input::placeholder {
+    background-image: url('../img/menu/search.svg');
+    background-repeat: no-repeat;
+    background-position: 10px 0px;
+    text-indent: 35px;
+    font-size: 16px;
+    font-weight: bold;
+  }
   .header--logo {
-    padding-left: 30px;
+    padding-left: 20px;
   }
   
   .header--logo img{
     border-radius: 50%;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
-  
-  .header input {
-    display: inline-block;
-    margin: 0 auto;
-    height: 35px;
-    width: 700px;
-    border-radius: 5px;
-    background-color: #f0f0f0;
+
+  .header--nav {
+    align-items: center;
     box-sizing: border-box;
-    border: none; 
+    flex-direction: row;
+    font-size: 18px;
   }
   
   .header--nav ul {
     display: flex;    
-    flex-wrap: wrap;
     list-style: none;
   }
   
   .header--nav img{
     display: inline-block;
-    padding: 0px 10px;
+    padding-right: 10px;
     height:25px;
-    width: 20px;
+    width: 25px;
+    color: gray;
   }
 
   .header--nav ul li a {
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 20px;
+    padding-right: 10px;
     color: gray;
     line-height: 2em;
     font-size: 1em;
@@ -56,10 +75,24 @@
 
     .header--nav ul li a img {
       margin: 0 auto;
-      padding-top: 5px;
     }
 
   .header--nav ul li:nth-child(3) {
     padding-right: 10px;
     border-right: solid 1px rgb(209, 207, 207);
   }
+
+  .header--nav ul li:nth-child(4) {
+    padding-top: 5px;
+  }
+
+  .header--nav ul li:nth-child(5) {
+    padding-top: 5px;
+
+  }
+  .header--nav ul li:nth-child(6) {
+    padding-top: 5px;
+  }
+
+
+  
